@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<!--put some animation or screen filler on the right side in here LOADING SCREEN-->
+<!--BEAR WAVING HI ANIMATION-->
+
+/ * / * * / / /welcome to my website/ / / * * / * /
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElijahLetitia</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            margin-left: 10px;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .footer h5 {
+            margin: 0 10px;
+        }
+    </style>
+    <script>
+        function copyEmail() {
+            const email = "thank.you.for.reaching.out.yay@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email copied to clipboard: " + email);
+            }).catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h4>ElijahLetitia</h4>
+            <img src="CUBWEBSITEOFFICIALCOLORED.png" alt="Logo" class="logo" width="50" height="50">
+        </div>
+    </header>
+    <h1>hello, <img src="potienial bear waving hi - TEST.png" alt="Logo" class="logo" width="250" height="250"></h1>
+    <nav>
+        <p>
+            current student at the University of Massachusetts, Amherst <a href="finished-projects.html">here are my projects i made</a>  and <a href="upcoming-projects.html">here are some projects i am working on!</a>
+        </p>
+    </nav>
+    <footer class="footer">
+        <button><a href="about.html">why i code</a></button>
+        <button><a href="#" onclick="copyEmail()">contact me: thank.you.for.reaching.out.yay@gmail.com</a></button>
+    </footer>
+</body> 
+
+</html>
